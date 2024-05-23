@@ -1,0 +1,55 @@
+<!-- Hyper Text Markup Language -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2 {
+            font-size: 100px;
+            color: rebeccapurple;
+            background-color: violet;
+        }
+        h4 {
+            color: hotpink
+        }
+    </style>
+</head>
+<body>
+    <h2>
+        Página Principal
+    </h2>
+    <marquee behavior="" direction="">
+        <h4>
+            Seja bem vindo, {{ .Nome }}!
+        </h4>
+    </marquee>
+
+    <button id="botao">Clique em MIM!</button>
+
+    <script>
+        
+        var botao = document.getElementById("botao");
+        botao.onclick = function () {
+            alert("Botão Clicaco com sucesso!")
+        }
+
+        // Usaremos para fazer chamadas no backend que chamará a API e acessar o DB...
+
+    </script>
+
+</body>
+</html>
+
+<!-- 
+
+    Exemplo:
+
+    {
+        Nome: João
+        Email: joao@googleanalytics.ru
+    }
+
+ -->
